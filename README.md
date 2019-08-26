@@ -16,6 +16,7 @@ We believe in Simple, Clean, Readable, Understandable, Maintainable and Testable
 * Avoid creating god object and long methods
 * Keep the method in one place, inject the class and call it, DRY
 * Avoid in-line comments (comment with code), put comments in the method doc
+* Code review to ensure code quality and integrity
 
 
 ## Installation
