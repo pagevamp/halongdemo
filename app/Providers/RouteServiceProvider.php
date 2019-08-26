@@ -16,6 +16,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected $namespace = 'App\Http\Controllers';
 
+    protected $apiVersion = 'v1';
+
     /**
      * Define your route model bindings, pattern filters, etc.
      *
@@ -35,7 +37,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-        $this->mapApiRoutes();
+        $this->mapCruiseRoutes();
 
         $this->mapWebRoutes();
 
@@ -56,18 +58,11 @@ class RouteServiceProvider extends ServiceProvider
              ->group(base_path('routes/web.php'));
     }
 
-    /**
-     * Define the "api" routes for the application.
-     *
-     * These routes are typically stateless.
-     *
-     * @return void
-     */
-    protected function mapApiRoutes()
+    protected function mapCruiseRoutes()
     {
-        Route::prefix('api')
+        Route::prefix($this->apiVersion)
              ->middleware('api')
              ->namespace($this->namespace)
-             ->group(base_path('routes/api.php'));
+             ->group(base_path('routes/API/cruise.php'));
     }
 }
