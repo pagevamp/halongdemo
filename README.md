@@ -1,10 +1,22 @@
 # Demo Project
 
-This Project is setup using docker. 
-We have followed Test Driven Development approach to minimize bugs. 
-Php Cs Fixer is enabled to follow PHP coding standards as defined in PSR-2.
+This Project is created for demo purpose and is missing many dependencies. Small module from one of our project has been extracted. 
 
-This Project is created for demo purposes and is missing many dependencies.
+Project is setup using docker. We use docker for most of all our project to make sure all of the environments we work are same. There are many other benefits of docker.
+
+We have followed Test Driven Development approach to make our system more robust and less error prone.
+ 
+Php Cs Fixer is enabled to follow PHP coding standards as defined in PSR-2.
+____
+We believe in Simple, Clean, Readable, Understandable, Maintainable and Testable code. Whatever language we choose to work with, we make sure our standard practices are maintained and followed by every team member. Below, you can find few rules we follow:
+* Follow a consistent coding standard (PHP: PSR-2)
+* Name things properly, long variable and function names are allowed
+* Be expressive, write code as you speak and be optimally verbose
+* Max indent per method should be 2, in case of exceptions 3
+* Avoid creating god object and long methods
+* Keep the method in one place, inject the class and call it, DRY
+* Avoid in-line comments (comment with code), put comments in the method doc
+
 
 ## Installation
 * `git clone git@github.com:pagevamp/halongdemo.git`
