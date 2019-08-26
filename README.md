@@ -5,6 +5,7 @@ Please use this code base for reference purposes only.
 
 ## Installation
 * `git clone git@github.com:pagevamp/halongdemo.git`
+* `cd halongdemo`
 * `docker-compose up -d`
 * `chmod -R 777 storage`
 * `cp .env.example .env`
