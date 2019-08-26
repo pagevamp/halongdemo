@@ -85,5 +85,3 @@ $factory->state(Cruise::class, 'create_default_metas', [])
             ]);
         }
     });
-
-
