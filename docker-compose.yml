@@ -1,0 +1,18 @@
+version: '3'
+services:
+  api.halongdemo.pv:
+    container_name: api.halongdemo.pv
+    image: pagevamp/nginx-php7-fpm:7.2-stage
+    restart: always
+    #env_file: .env
+    environment:
+      - VIRTUAL_HOST=api.halongdemo.pv
+    volumes:
+      - .:/var/www
+      - ./docker/sites/default.conf:/etc/nginx/sites-enabled/default
+    networks:
+      - pagevamp
+
+networks:
+  pagevamp:
+    external: true
